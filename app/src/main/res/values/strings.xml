@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SamepleAPP</string>
+
+
+
+
+    <string name="aaaa_sr6_passport">PASSPORT</string>
+    <string name="aaaa_sr6_iddoc">ID CARD</string>
+    <string name="aaaa_sr6_expiry">EXPIRED</string>
+    <string name="aaaa_sr6_not_expiry">NOT EXPIRED</string>
+    <string name="aaaa_sr6_doc_holder">Doc Holder</string>
+    <string name="aaaa_sr6_doc_number">Doc Number</string>
+    <string name="aaaa_sr6_expiration">Expiration</string>
+    <string name="aaaa_sr6_birthdate">Birthdate</string>
+    <string name="aaaa_sr6_lastname">Last Name</string>
+    <string name="aaaa_sr6_givenname">Given names</string>
+    <string name="aaaa_sr6_issue_place">Issue place</string>
+    <string name="aaaa_sr6_sex">Sex</string>
+    <string name="aaaa_sr6_nationality">Nationality</string>
+    <string name="aaaa_sr6_male">MALE</string>
+    <string name="aaaa_sr6_female">FEMALE</string>
+</resources>

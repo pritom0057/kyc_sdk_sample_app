@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="viewfinder_frame">#fff39912</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#ff009fcc</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="darkgreen">#ff006400</color>
+    <color name="red">#ffff0000</color>
+    <color name="darkgray">#ffa9a9a9</color>
+    <color name="silver">#ffc0c0c0</color>
+
+
+</resources>

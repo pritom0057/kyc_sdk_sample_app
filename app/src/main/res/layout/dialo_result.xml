@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/checking_summery_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kycnfcresult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="20sp"
+                android:text="IDCheck Reporting"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doc_container_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checking_summery_tv"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_view_verified"
+                    android:layout_width="120sp"
+                    android:layout_height="95sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ok" />
+
+                <TextView
+                    android:id="@+id/is_expiry_text_m"
+                    android:layout_width="145sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="NOT EXPIRED" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textColor="@color/blue"
+                    android:id="@+id/interpol_info"
+                    android:layout_width="145sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/holder_container_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doc_container_ll"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_doc_holder_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checking_summery_tv"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30sp"
+                android:gravity="center_horizontal"
+                android:text="@string/aaaa_sr6_doc_holder"
+                android:textSize="15sp" />
+
+            <ImageView
+
+                android:id="@+id/image_view_head_nfc"
+                android:layout_width="180sp"
+                android:layout_height="180sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20sp"
+                android:layout_weight="1.0"
+                android:background="@color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_doc_holder_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/holder_container_ll"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingLeft="10sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.8"
+                    android:text="@string/aaaa_sr6_doc_number" />
+
+                <EditText
+                    android:id="@+id/doc_num_et_nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.8"
+                    android:text="Issue Date:" />
+
+                <EditText
+                    android:id="@+id/issue_date_et_nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.8"
+                    android:text="@string/aaaa_sr6_expiration" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/expiry_et_nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+
+                <EditText
+                    android:id="@+id/expiry_et_nfc_fr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.8"
+                    android:text="@string/aaaa_sr6_birthdate" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/birth_day_et_nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+
+                <EditText
+                    android:id="@+id/birth_day_et_nfc_fr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.8"
+                    android:text="@string/aaaa_sr6_lastname" />
+
+                <EditText
+                    android:id="@+id/last_name_et_nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.8"
+                    android:text="@string/aaaa_sr6_givenname" />
+
+                <EditText
+                    android:id="@+id/given_name_et_nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.8"
+                    android:text="@string/aaaa_sr6_issue_place" />
+
+                <EditText
+                    android:id="@+id/issue_place_et_nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.8"
+                    android:text="@string/aaaa_sr6_sex" />
+
+                <EditText
+                    android:id="@+id/sex_et_nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.1"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:text="@string/aaaa_sr6_nationality" />
+
+                <EditText
+                    android:id="@+id/nationality_et_nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1.5"
+                    android:textColor="@drawable/aaaa_disable_edit_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:text="OKAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/okay_button"/>
+</LinearLayout>
+
+</ScrollView>
