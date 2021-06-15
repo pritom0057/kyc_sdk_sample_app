@@ -1,4 +1,4 @@
-package com.example.samepleapp;
+package com.neuronestech.visitor;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.samepleapp.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
